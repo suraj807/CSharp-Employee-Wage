@@ -10,7 +10,18 @@ namespace csharpemployeewage
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Employee Wage");
+            int ispresent = 1;
+            Random random = new Random();
+            int empInput = random.Next(0, 2);
+
+            if (ispresent == empInput)
+            {
+                Console.WriteLine("employee is present");
+            }
+            else
+            {
+                Console.WriteLine("employee is absent");
+            }
         }
     }
 }
